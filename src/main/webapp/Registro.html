@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<h1 style="text-align:center;">Registro</h1>
+	<form action="recogeDatos.jsp" style="background-color: white;">
+		<table style="background-color: orange; margin-left:7% ">
+			<tr>
+				<td width="13"><label for="nombre">Nombre</label></td>
+				<td width="87"><input type="text" name ="name" id = "idName"></td>
+			</tr>
+			<tr>
+				<td width="13"><label for="apellidos">apellidos</label></td>
+				<td width="87"><input type="text" name ="lastName" id = "idLastName"></td>
+			</tr>
+			<tr>
+				<td width="13"><label for="Usuario">Usuario</label></td>
+				<td width="87"><input type="text" name ="User" id = "idUser"></td>
+			</tr>
+			<tr>
+				<td width="13"><label for="Contra">Contraseña</label></td>
+				<td width="87"><input type="password" name ="Password" id = "idPassword"></td>
+			</tr>
+			<tr>
+				<td width="13"><label for="Pais">País</label></td>
+				<td width="87"><Select type="text" name ="Country" id = "idCountry">
+					<option value="ES">España</option>
+					<option value="PT">Portugal</option>
+					<option value="FR">Francia</option>
+					<option value="EN">Inglaterra</option>
+					<option value="DE">Alemania</option>
+				
+				</Select></td>
+			</tr>
+			<tr>
+				<td>
+					<label>
+					Tecnologías
+					</label>
+				</td>
+				<td>
+					<label for="Tecno"><input type="radio" name ="tecnologies" value="Java"id = "idJava">Java</label>
+					<br>
+					<label for="Tecno"><input type="radio" name ="tecnologies" value="Php"id = "idPhp">PHP</label>
+					<br>
+					<label for="Tecno"><input type="radio" name ="tecnologies" value="Phyton"id = "idPhyton">Phyton</label>
+					<br>
+					
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" name="botonEnviar" id ="sendButton" value="Enviar">
+				</td>			
+			</tr>
+			
+		</table>
+	</form>
+</body>
+</html>
